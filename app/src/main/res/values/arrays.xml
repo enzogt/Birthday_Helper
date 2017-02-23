@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="imagenes_defecto">
+        <item>@drawable/anonimo_heisenberg</item>
+        <item>@drawable/anonimo_bolsa</item>
+        <item>@drawable/anonimo_anonymous</item>
+        <item>@drawable/anonimo_fiesta</item>
+    </string-array>
+
+</resources>

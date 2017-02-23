@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_configuraciones"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/patron"
+    tools:context="es.enzogt.birthday.Configuraciones"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlHora">
+
+        <TextView
+            android:text="@string/hora_comprobacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textSize="18sp"
+            android:id="@+id/lblHoraTitulo" />
+
+        <TextView
+            android:text="00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblHoraEstablecida"
+            android:textSize="24sp"
+            android:layout_below="@+id/lblHoraTitulo"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="@string/cambiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCambiarHora"
+            android:layout_alignBottom="@+id/lblHoraEstablecida"
+            android:layout_alignParentEnd="true"
+            android:onClick="cambiarHora" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="@string/icono_defecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblIconoDefecto"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp"
+        android:onClick="cambiarIconoDefecto" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/anonimo_heisenberg"
+            android:id="@+id/iconoUno"
+            android:background="@null"
+            android:layout_weight=".25"
+            android:padding="5dp"
+            android:onClick="cambiarIconoDefecto"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/anonimo_bolsa"
+            android:id="@+id/iconoDos"
+            android:background="@null"
+            android:layout_weight=".25"
+            android:padding="5dp"
+            android:onClick="cambiarIconoDefecto"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/anonimo_anonymous"
+            android:id="@+id/iconoTres"
+            android:background="@null"
+            android:layout_weight=".25"
+            android:padding="5dp"
+            android:onClick="cambiarIconoDefecto"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/anonimo_fiesta"
+            android:id="@+id/iconoCuatro"
+            android:background="@null"
+            android:layout_weight=".25"
+            android:padding="5dp"
+            android:onClick="cambiarIconoDefecto"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/actualizar_contactos_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblAutoActualizacion"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchAutoactualizacion" />
+
+    <TextView
+        android:text="@string/mensaje_defecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblMensajeDefecto"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:id="@+id/txtMensajeDefecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lines="3"
+        android:minLines="3"
+        android:maxLines="3"
+        android:maxLength="160"
+        android:hint="@string/hint_mensaje_defecto" />
+
+</LinearLayout>

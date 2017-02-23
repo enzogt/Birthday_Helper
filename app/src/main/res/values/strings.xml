@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Cumpleaños</string>
+
+    <string name="informacion_contacto">Escribe el nombre del contacto aquí</string>
+
+    <string name="no_encontrado_titulo">Contacto no encontrado</string>
+    <string name="no_encontrado_sugerencia">Quizás deberías probar con otro nombre</string>
+    <string name="title_activity_configuraciones">Configuración</string>
+
+    <string name="hora_comprobacion">Hora de comprobación</string>
+    <string name="cambiar">Cambiar</string>
+
+    <string name="icono_defecto">Imagen por defecto</string>
+    <string name="actualizando_contactos">Actualizando contactos...</string>
+
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar">Aceptar</string>
+
+    <string name="nombre">Nombre:</string>
+    <string name="fechaCumple">Cumpleaños:</string>
+    <string name="telefono">Teléfono preferido</string>
+    <string name="mensaje">Mensaje</string>
+
+    <string name="actualizando_contacto">Actualizando contacto...</string>
+    <string name="guardando_contacto">Guardando contacto...</string>
+
+    <string name="notificacion_compacta_titulo">Aviso de cumpleaños</string>
+    <string name="notificacion_compacta_texto">Alguno de tus contactos cumple años hoy</string>
+    <string name="notificacion_expandida_titulo">Hoy cumplen años: </string>
+    <string name="notificacion_expandida_texto">  - {0}</string>
+
+    <string name="actualizar_contactos_inicio">Actualizar los contactos durante el inicio automáticamente</string>
+    <string name="activado">Activado</string>
+    <string name="desactivado">Desactivado</string>
+
+    <string name="mensaje_defecto">Mensaje por defecto</string>
+    <string name="hint_mensaje_defecto">Dedícale unas palabras al cumpleañero</string>
+
+</resources>
